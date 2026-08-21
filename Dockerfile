@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app
 
 # 5. Run the main ETL script directly
-CMD ["python", "main.py"]
+CMD ["python", "Linear_Regreession.py"]
