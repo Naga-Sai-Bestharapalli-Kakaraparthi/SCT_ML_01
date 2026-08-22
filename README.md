@@ -15,8 +15,6 @@ This repository contains an automated ETL (Extract, Transform, Load) pipeline bu
 
 ## How to Run with Docker
 
-## How to Run with Docker
-
 1. **Build the Docker Image:**
    `docker build -t housing-etl-pipeline .`
 
