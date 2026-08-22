@@ -18,7 +18,9 @@ def transform(df: pd.DataFrame) -> pd.DataFrame:
 def load(df: pd.DataFrame, output_path: str) -> None:
     """Export processed dataset to structured storage."""
     print(f"[LOAD] Writing structured output to {output_path}...")
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    dir_name = os.path.dirname(output_path)
+    if dir_name:
+        os.makedirs(dir_name, exist_ok=True)
     df.to_csv(output_path, index=False)
     print("[LOAD] Pipeline execution complete.")
 
